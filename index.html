@@ -9,6 +9,7 @@
 <body>
     <div id="app">
         <h1>StudyMate - Flashcards</h1>
+        <button id="settings-btn">Settings</button>
         <div id="stack-list"></div>
         <button id="add-stack-btn">Add Stack</button>
     </div>
@@ -32,11 +33,37 @@
         </div>
     </div>
 
+    <div id="settings-screen" class="hidden">
+        <button id="settings-back-btn">Back</button>
+        <h2>Settings</h2>
+        <label>Notification Interval (min)</label>
+        <input id="settings-interval" type="number" min="0">
+        <h3>Active Decks</h3>
+        <div id="active-deck-list"></div>
+        <button id="save-settings-screen-btn">Save</button>
+    </div>
+
     <div id="stack-view" class="hidden">
         <button id="back-to-stacks">Back to Stacks</button>
         <h2 id="stack-title"></h2>
+        <label><input type="checkbox" id="deck-active-checkbox"> Active</label>
+        <button id="delete-deck-btn">Delete Deck</button>
+        <button id="start-quiz-btn">Start Quiz</button>
         <div id="cards"></div>
         <button id="add-card-btn">Add Card</button>
+    </div>
+
+    <div id="quiz-container" class="modal hidden">
+        <div class="modal-content">
+            <div id="quiz-front"></div>
+            <div id="quiz-back" class="hidden"></div>
+            <button id="show-answer-btn">Show Answer</button>
+            <div id="quiz-actions" class="hidden">
+                <button id="right-btn">Right</button>
+                <button id="wrong-btn">Wrong</button>
+            </div>
+            <button id="close-quiz-btn">Close</button>
+        </div>
     </div>
 
     <script src="app.js"></script>
