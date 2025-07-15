@@ -36,3 +36,13 @@ body {
   margin: 100px auto;
   width: 300px;
 }
+
+#quiz-front, #quiz-back {
+  margin-bottom: 12px;
+  font-size: 18px;
+  text-align: center;
+}
+
+#quiz-actions button {
+  margin-right: 8px;
+}
