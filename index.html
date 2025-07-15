@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyMate</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>StudyMate - Flashcards</h1>
+        <div id="stack-list"></div>
+        <button id="add-stack-btn">Add Stack</button>
+    </div>
+
+    <div id="stack-editor" class="modal hidden">
+        <div class="modal-content">
+            <h2>Create Stack</h2>
+            <input id="stack-name" placeholder="Stack Name">
+            <button id="save-stack-btn">Save</button>
+            <button id="close-stack-editor">Cancel</button>
+        </div>
+    </div>
+
+    <div id="card-editor" class="modal hidden">
+        <div class="modal-content">
+            <h2>Add Card</h2>
+            <input id="card-front" placeholder="Front">
+            <input id="card-back" placeholder="Back">
+            <button id="save-card-btn">Save Card</button>
+            <button id="close-card-editor">Cancel</button>
+        </div>
+    </div>
+
+    <div id="stack-view" class="hidden">
+        <button id="back-to-stacks">Back to Stacks</button>
+        <h2 id="stack-title"></h2>
+        <div id="cards"></div>
+        <button id="add-card-btn">Add Card</button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
