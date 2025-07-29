@@ -4,22 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyMate</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="app">
+    <div id="app" class="container">
         <h1>StudyMate - Flashcards</h1>
-        <button id="settings-btn">Settings</button>
+        <button id="settings-btn" class="btn"><span class="material-icons">settings</span></button>
         <div id="stack-list"></div>
-        <button id="add-stack-btn">Add Stack</button>
+        <button id="add-stack-btn" class="btn">Add Stack</button>
     </div>
 
     <div id="stack-editor" class="modal hidden">
         <div class="modal-content">
             <h2>Create Stack</h2>
             <input id="stack-name" placeholder="Stack Name">
-            <button id="save-stack-btn">Save</button>
-            <button id="close-stack-editor">Cancel</button>
+            <button id="save-stack-btn" class="btn">Save</button>
+            <button id="close-stack-editor" class="btn">Cancel</button>
         </div>
     </div>
 
@@ -28,8 +30,8 @@
             <h2>Add Card</h2>
             <input id="card-front" placeholder="Front">
             <input id="card-back" placeholder="Back">
-            <button id="save-card-btn">Save Card</button>
-            <button id="close-card-editor">Cancel</button>
+            <button id="save-card-btn" class="btn">Save Card</button>
+            <button id="close-card-editor" class="btn">Cancel</button>
         </div>
     </div>
 
@@ -38,31 +40,31 @@
             <h2>Settings</h2>
             <label>Notification Interval (min)</label>
             <input id="notif-interval" type="number" min="0">
-            <button id="save-settings-btn">Save</button>
-            <button id="close-settings-btn">Close</button>
+            <button id="save-settings-btn" class="btn">Save</button>
+            <button id="close-settings-btn" class="btn">Close</button>
         </div>
     </div>
 
-    <div id="stack-view" class="hidden">
-        <button id="back-to-stacks">Back to Stacks</button>
+    <div id="stack-view" class="container hidden">
+        <button id="back-to-stacks" class="btn">Back to Stacks</button>
         <h2 id="stack-title"></h2>
         <label><input type="checkbox" id="deck-active-checkbox"> Active</label>
-        <button id="delete-deck-btn">Delete Deck</button>
-        <button id="start-quiz-btn">Start Quiz</button>
+        <button id="delete-deck-btn" class="btn red">Delete Deck</button>
+        <button id="start-quiz-btn" class="btn">Start Quiz</button>
         <div id="cards"></div>
-        <button id="add-card-btn">Add Card</button>
+        <button id="add-card-btn" class="btn">Add Card</button>
     </div>
 
     <div id="quiz-container" class="modal hidden">
         <div class="modal-content">
             <div id="quiz-front"></div>
             <div id="quiz-back" class="hidden"></div>
-            <button id="show-answer-btn">Show Answer</button>
+            <button id="show-answer-btn" class="btn">Show Answer</button>
             <div id="quiz-actions" class="hidden">
-                <button id="right-btn">Right</button>
-                <button id="wrong-btn">Wrong</button>
+                <button id="right-btn" class="btn">Right</button>
+                <button id="wrong-btn" class="btn red">Wrong</button>
             </div>
-            <button id="close-quiz-btn">Close</button>
+            <button id="close-quiz-btn" class="btn">Close</button>
         </div>
     </div>
 
